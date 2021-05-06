@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;669;700;800;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js calculator  </title>
+   <style type="text/css">
+   *{
+       padding:0;
+       margin:0;
+   }
+    body{
+        background-color: #3ea7fa;
+    }
+    #container{
+        width:1140px;
+        margin:auto;
+
+    }
+    form{
+        width: 250px;
+        background:#eeededc4;
+        padding:30px 15px 15px 15px;
+        box-shadow: 1px 1px 20px 0px #534343;
+        margin:auto;
+        transform: translate(0,50%);
+
+    }
+    input[type="text"]{
+        width:100%;
+        padding:5px 5px;
+        font-size:35px;
+        text-align:right;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        font-family: 'Orbitron', sans-serif;
+
+    }
+   input[type="button"]{
+         width:58px;
+        height: 55px;
+        background: #f2e9dd;
+        color:black;
+        font-size: 24px;
+        margin-bottom: 5px;
+        box-shadow: 1px 1px 2px 1px #333;
+        outline: none;
+        border: none;
+
+
+   }
+
+
+   </style>
+</head>
+<body>
+<div id="container">
+<form action="" name="calculator">
+
+<input type="text" name="screen" disabled>
+
+<input type="button" value="&radic;" onclick="calculator.screen.value=Math.sqrt(calculator.screen.value )" >
+<input type="button" value="CE" onclick="calculator.screen.value=''">
+<input type="button" value="C"  onclick="calculator.screen.value=''">
+<input type="button" value="&larr;"onclick="calculator.screen.value=calculator.screen.value.slice(0,-1)" >
+<br>
+<input type="button" value="7" onclick="calculator.screen.value +='7'">
+<input type="button" value="8"  onclick="calculator.screen.value +='8'">
+<input type="button" value="9"  onclick="calculator.screen.value +='9'">
+<input type="button" value="+"  onclick="calculator.screen.value +='+'">
+<br>
+<input type="button" value="4"  onclick="calculator.screen.value +='4'">
+<input type="button" value="5"  onclick="calculator.screen.value +='5'">
+<input type="button" value="6"  onclick="calculator.screen.value +='6'">
+<input type="button" value="-"  onclick="calculator.screen.value +='-'">
+<br>
+<input type="button" value="1"  onclick="calculator.screen.value +='1'">
+<input type="button" value="2"  onclick="calculator.screen.value +='2'">
+<input type="button" value="3"  onclick="calculator.screen.value +='3'">
+<input type="button" value="*"  onclick="calculator.screen.value +='*'">
+<br>
+<input type="button" value="."  onclick="calculator.screen.value +='.'">
+<input type="button" value="0"  onclick="calculator.screen.value +='0'">
+<input type="button" value="=" onclick="calculator.screen.value=eval(calculator.screen.value )">
+<input type="button" value="/"  onclick="calculator.screen.value +='/'">
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
